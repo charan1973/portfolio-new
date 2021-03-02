@@ -15,7 +15,7 @@ export default function Home() {
           height="100px"
           className="rounded-full"
         />
-        <h2 className="font-bold text-lg text-2xl mt-2">I'm Charan👋</h2>
+        <h2 className="font-bold text-2xl mt-2">I'm Charan👋</h2>
       </div>
       <div className="mt-4 lg:px-16">
         <p

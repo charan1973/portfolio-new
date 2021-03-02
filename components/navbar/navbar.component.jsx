@@ -21,7 +21,6 @@ const Navbar = () => {
       <div
         className={`lg:flex lg:flex-row w-full lg:w-3/5 justify-around ${showNav ? "flex flex-col items-center" : "hidden"}`}
       >
-        {/* <NavbarButton href="/skills">Skills</NavbarButton> */}
         <NavbarButton href="/projects">Projects</NavbarButton>
         <NavbarButton href="/uses">Uses</NavbarButton>
         <NavbarButton href="/resources">Resources</NavbarButton>
