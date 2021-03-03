@@ -4,14 +4,14 @@ import Link from "next/link";
 import { skills, courses } from "../data/home.data";
 
 const SkillBox = ({ icon, name }) => (
-  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white cursor-pointer">
+  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-pointer">
     <span className="text-md mr-1">{icon}</span>
     <span className="text-sm lg:text-md">{name}</span>
   </div>
 );
 
 const CourseBox = ({ courseName, courseLink, certificateLink }) => (
-  <div className="border py-4 px-3 relative h-44">
+  <div className="border py-4 px-3 relative h-44 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black">
     <Link href={courseLink}>
       <a target="_blank" className="text-sm block hover:underline">
         {courseName}

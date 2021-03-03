@@ -1,6 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const LinkButton = ({ url, children }) => (
+  <Link href={url}>
+    <a
+      target="_blank"
+      className="p-2 lg:p-5 border border-gray-500 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+    >
+      {children} &#8594;
+    </a>
+  </Link>
+);
+
 const ProjectCard = ({
   name,
   description,
@@ -9,33 +20,19 @@ const ProjectCard = ({
   githubUrl,
 }) => {
   return (
-    <div className="h-56 w-full border flex items-center py-4 lg:px-20 justify-around">
+    <div className="h-60 w-full border flex items-center py-4 lg:px-20 justify-around">
       <img
         src={imageUrl}
-        className="mx-2 w-2/5 lg:w-1/3 h-full rounded border"
+        className="mx-2 w-2/5 lg:w-1/3 h-3/4 lg:h-full rounded border"
       />
       <div className="flex flex-col justify-around h-full">
         <h4 className="font-bold text-lg">{name}</h4>
-        <p className="text-sm font-medium max-w-md">{description}</p>
+        <p className="text-sm font-medium max-w-md">
+          {description.slice(0, 112) + (description.length > 112 ? "..." : "")}
+        </p>
         <div className="flex flex-col lg:flex-row">
-          {projectUrl && (
-            <Link href={projectUrl}>
-              <a
-                target="_blank"
-                className="p-2 lg:p-5 lg:mr-2 border border-gray-500 hover:bg-black hover:text-white"
-              >
-                Project URL &#8594;
-              </a>
-            </Link>
-          )}
-          <Link href={githubUrl}>
-            <a
-              target="_blank"
-              className="p-2 lg:p-5 border border-gray-500 hover:bg-black hover:text-white"
-            >
-              Github URL &#8594;
-            </a>
-          </Link>
+          {projectUrl && <LinkButton url={projectUrl}>Project URL</LinkButton>}
+          <LinkButton url={githubUrl}>Github URL</LinkButton>
         </div>
       </div>
     </div>
