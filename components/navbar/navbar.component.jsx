@@ -23,7 +23,7 @@ const Navbar = () => {
         onClick={() => setShowNav(false)}
       >
         <NavbarButton href="/projects">Projects</NavbarButton>
-        <NavbarButton href="/uses">Uses</NavbarButton>
+        <NavbarButton href="/tools">Tools</NavbarButton>
         <NavbarButton href="/resources">Resources</NavbarButton>
       </div>
     </div>
