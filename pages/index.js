@@ -35,6 +35,10 @@ export default function Home() {
     <>
       <Head>
         <title>Charan | Home</title>
+        <meta
+          name="description"
+          content="Charan Vasu's Portfolio website. Electronics student and Javascript developer."
+        />
       </Head>
       <div className="px-2 lg:px-32">
         <div className="flex flex-col items-center justify-center">
