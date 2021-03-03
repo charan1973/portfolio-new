@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full">
       <div className="w-full flex justify-between">
       <NavbarButton href="/" className="font-semibold border-2">
-        CV
+        CHARAN
       </NavbarButton>
       <button
         className="lg:hidden focus:outline-none text-2xl"
