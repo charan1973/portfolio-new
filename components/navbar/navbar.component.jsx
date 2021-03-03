@@ -20,6 +20,7 @@ const Navbar = () => {
       </div>
       <div
         className={`lg:flex lg:flex-row w-full lg:w-3/5 justify-around ${showNav ? "flex flex-col items-center" : "hidden"}`}
+        onClick={() => setShowNav(false)}
       >
         <NavbarButton href="/projects">Projects</NavbarButton>
         <NavbarButton href="/uses">Uses</NavbarButton>
