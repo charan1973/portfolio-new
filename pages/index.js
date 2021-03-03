@@ -1,11 +1,29 @@
 import Image from "next/image";
 import Head from "next/head";
-import { skills } from "../data/home.data";
+import Link from "next/link"
+import { skills, courses } from "../data/home.data";
 
 const SkillBox = ({ icon, name }) => (
   <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white cursor-pointer">
     <span className="text-md mr-1">{icon}</span>
     <span className="text-sm lg:text-md">{name}</span>
+  </div>
+);
+
+const CourseBox = ({ courseName, courseLink, certificateLink }) => (
+  <div className="border py-4 px-3 relative h-44">
+    <Link href={courseLink}>
+      <a target="_blank" className="text-sm block hover:underline">
+        {courseName}
+      </a>
+    </Link>
+    {
+      certificateLink && (
+        <Link href={certificateLink}>
+          <a target="_blank" className="absolute bottom-3 font-semibold hover:underline">certificate &#8594;</a>
+        </Link>
+      )
+    }
   </div>
 );
 
@@ -45,7 +63,15 @@ export default function Home() {
           <h3 className="font-bold text-2xl mt-4 text-center mb-6">Skills</h3>
           <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
             {skills.map((skill) => (
-              <SkillBox key={skill.name} icon={skill.icon} name={skill.name} />
+              <SkillBox key={skill.name} {...skill} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="font-bold text-2xl mt-4 text-center mb-6">Courses</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+            {courses.map((course) => (
+              <CourseBox key={course.courseName} {...course} />
             ))}
           </div>
         </div>
