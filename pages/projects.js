@@ -9,7 +9,7 @@ const Projects = () => {
         <title>Charan | Projects</title>
         <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
       </Head>
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 h-40">
       <div
         className="github-card"
         data-github="charan1973"
