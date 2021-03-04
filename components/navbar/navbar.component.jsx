@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavbarButton from "../navbar-button/navbar-button.component";
 import { useTheme } from "next-themes";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaExternalLinkAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -15,20 +15,24 @@ const Navbar = () => {
           CHARAN
         </NavbarButton>
         <div className="flex">
-        <button
-          aria-label="Toggle Dark Mode"
-          type="button"
-          className="mr-4 lg:mr-0 focus:outline-none text-black dark:text-white p-4"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-          {theme === "dark" ? <FaSun className="text-2xl" /> : <FaMoon className="text-2xl" />}
-        </button>
-        <button
-          className="lg:hidden focus:outline-none text-2xl"
-          onClick={() => setShowNav(!showNav)}
-        >
-          {!showNav ? <span>&#9776;</span> : <span>&#120;</span>}
-        </button>
+          <button
+            aria-label="Toggle Dark Mode"
+            type="button"
+            className="mr-4 lg:mr-0 focus:outline-none text-black dark:text-white p-4"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <FaSun className="text-2xl" />
+            ) : (
+              <FaMoon className="text-2xl" />
+            )}
+          </button>
+          <button
+            className="lg:hidden focus:outline-none text-2xl"
+            onClick={() => setShowNav(!showNav)}
+          >
+            {!showNav ? <span>&#9776;</span> : <span>&#120;</span>}
+          </button>
         </div>
       </div>
       <div
@@ -40,6 +44,12 @@ const Navbar = () => {
         <NavbarButton href="/projects">Projects</NavbarButton>
         <NavbarButton href="/tools">Tools</NavbarButton>
         <NavbarButton href="/resources">Resources</NavbarButton>
+        <NavbarButton href="https://blog.charanvasu.me" target="_blank">
+          <span className="flex items-center">
+            <span className="mr-1">Blog</span>
+            <FaExternalLinkAlt />
+          </span>
+        </NavbarButton>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const NavbarButton = ({ children, href, className, ...otherProps }) => {
+const NavbarButton = ({ children, href, className, target, ...otherProps }) => {
   const router = useRouter();
 
   return (
@@ -10,6 +10,7 @@ const NavbarButton = ({ children, href, className, ...otherProps }) => {
         className={`hover:bg-gray-900 p-3 hover:text-white dark:hover:bg-white dark:hover:text-black ${
           router.pathname === href && "bg-gray-900 text-white dark:bg-white dark:text-black"
         } ${className}`}
+        target={target}
       >
         <span>{children}</span>
       </a>

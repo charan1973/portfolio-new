@@ -4,7 +4,7 @@ import Link from "next/link";
 import { skills, courses } from "../data/home.data";
 
 const SkillBox = ({ icon, name }) => (
-  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-pointer">
+  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-default">
     <span className="text-md mr-1">{icon}</span>
     <span className="text-sm lg:text-md">{name}</span>
   </div>
