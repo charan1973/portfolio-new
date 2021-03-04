@@ -77,7 +77,7 @@ export const courses = [
     courseLink:
       "https://www.udemy.com/course/the-complete-web-development-bootcamp",
     certificateLink:
-      "https://udemy-certificate.s3.amazonaws.com/image/UC-efc7f8af-0a84-491c-930f-402b16cbba22.jpg",
+      "https://udemy-certificate.s3.amazonaws.com/pdf/UC-efc7f8af-0a84-491c-930f-402b16cbba22.pdf",
   },
   {
     courseName: "Full Stack MERN Bootcamp",
