@@ -1,7 +1,7 @@
 export const tools = [
     {
       title: "Operating System",
-      items: ["Fedora 32", "Windows 10"],
+      items: ["Ubuntu 20.04", "Windows 10"],
     },
     {
       title: "Softwares",
