@@ -56,9 +56,7 @@ export default function Home() {
             className="text-lg leading-10 break-word"
             style={{ hyphens: "auto" }}
           >
-            Hello, I am a <b>Web developer</b>🌍 based on Tamil Nadu, India🇮🇳. I
-            am currently pursuing <b>Electronics and Communication</b> Bachelors
-            in <b>Sathyabama University, Chennai</b>. I love computers and the
+            Hello, I am a <b>Web developer</b>🌍 based on Tamil Nadu, India. I love computers and the
             things it can do. To continue the passion for computers, I started
             learning programming and found my way into web development. I
             currently use <b>javascript</b>❤ as my main language and also I am a{" "}
