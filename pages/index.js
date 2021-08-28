@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       <div className="px-2 lg:px-32">
         <div className="flex flex-col items-center justify-center">
-          <Image
+          <img
             src="/images/propic.jpeg"
             width="100px"
             height="100px"
