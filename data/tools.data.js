@@ -1,18 +1,16 @@
 export const tools = [
     {
       title: "Operating System",
-      items: ["Ubuntu 20.04", "Windows 10"],
+      items: ["Fedora 35", "Windows 11"],
     },
     {
       title: "Softwares",
       items: [
         "Visual Studio Code - Editor",
-        "Joplin - Note taking app",
-        "Shutter - Screenshot tool",
-        "OBS - Screenrecorder",
         "Postman - REST API testing",
-        "Robo 3T - MongoDB client",
+        "MongoDB Compass - MongoDB client",
         "DBeaver - Universal Database client",
+        "Notion",
       ],
     },
   ];
