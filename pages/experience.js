@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link";
 import { useState } from "react";
 import { experience as experienceList } from "../data/experience.data";
 
@@ -17,7 +18,11 @@ const Experience = () => {
                     return (
                         <div className="border p-10 mb-10" key={experience.id}>
                             <div className="flex justify-between items-center">
-                                <h1 className="text-xl font-bold">{experience.companyName}</h1>
+                                <h1 className="text-xl font-bold hover:underline">
+                                    <Link href={experience.companyLink}>
+                                        <a target="_blank">{experience.companyName}</a>
+                                    </Link>
+                                </h1>
                                 <small className="text-xs">{experience.during}</small>
                             </div>
                             <small className="text-xs">{experience.role}</small>

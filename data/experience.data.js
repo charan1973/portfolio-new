@@ -1,7 +1,8 @@
 export const experience = [
     {
-        id: 1,
+        id: 3,
         companyName: "StoryXpress",
+        companyLink: "https://storyxpress.co",
         role: "Software Development Engineer I",
         during: "July 2021 - present",
         techStack: ["Nodejs", "Express", "React", "Redis", "RabbitMQ", "MySQL"],
@@ -23,6 +24,7 @@ export const experience = [
     {
         id: 2,
         companyName: "Sawo Labs",
+        companyLink: "https://sawolabs.com",
         role: "Full Stack Web Developer(Intern)",
         during: "June 2021",
         techStack: ["React", "Django", "Redux"],
@@ -34,8 +36,9 @@ export const experience = [
         ]
     },
     {
-        id: 3,
+        id: 1,
         companyName: "Mapsense",
+        companyLink: "https://mapsense.in",
         role: "Full Stack Web Developer(Intern)",
         during: "Mar 2021 - June 2021",
         techStack: ["Nodejs", "Express", "React", "Javascript", "PostgreSQL"],
