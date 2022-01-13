@@ -41,6 +41,7 @@ const Navbar = () => {
         }`}
         onClick={() => setShowNav(false)}
       >
+        <NavbarButton href="/experience">Experience</NavbarButton>
         <NavbarButton href="/projects">Projects</NavbarButton>
         <NavbarButton href="/tools">Tools</NavbarButton>
         <NavbarButton href="/resources">Resources</NavbarButton>
