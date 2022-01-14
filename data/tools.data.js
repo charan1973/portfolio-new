@@ -11,6 +11,7 @@ export const tools = [
         "MongoDB Compass - MongoDB client",
         "DBeaver - Universal Database client",
         "Notion",
+        "Docker"
       ],
     },
   ];

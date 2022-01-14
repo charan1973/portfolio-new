@@ -7,13 +7,15 @@ import {
 } from "react-icons/fa";
 import {
   SiMongodb,
-  SiPostgresql,
   SiJavascript,
   SiGit,
   SiTailwindcss,
   SiDjango,
   SiHeroku,
   SiNextDotJs,
+  SiRedis,
+  SiRabbitmq,
+  SiMysql
 } from "react-icons/si";
 
 export const skills = [
@@ -30,8 +32,8 @@ export const skills = [
     name: "MongoDB",
   },
   {
-    icon: <SiPostgresql />,
-    name: "PostgreSQL",
+    icon: <SiMysql />,
+    name: "MySQL",
   },
   {
     icon: <SiJavascript />,
@@ -68,6 +70,14 @@ export const skills = [
   {
     icon: <SiHeroku />,
     name: "Heroku",
+  },
+  {
+    icon: <SiRedis />,
+    name: "Redis"
+  },
+  {
+    icon: <SiRabbitmq />,
+    name: "RabbitMQ"
   },
 ];
 

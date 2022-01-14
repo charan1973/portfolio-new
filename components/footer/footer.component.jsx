@@ -15,26 +15,11 @@ const Footer = () => {
             <FaLinkedin className="text-4xl" />
           </a>
         </Link>
-        <Link href="https://www.instagram.com/charanvasuvickram/">
-          <a target="_blank" title="@charanvasuvickram">
-            <FaInstagram className="text-4xl" />
-          </a>
-        </Link>
         <Link href="https://twitter.com/charan1973taken">
           <a target="_blank" title="@charan1973taken">
             <FaTwitter className="text-4xl" />
           </a>
         </Link>
-      </div>
-      <div className="mt-4 text-center">
-        <small className="font-semibold">
-          This site is inspired by{" "}
-          <Link href="https://www.dhanishgajjar.com/">
-            <a target="_blank" className="underline hover:no-underline">
-              Dhanish Gajjar's Site
-            </a>
-          </Link>
-        </small>
       </div>
     </>
   );

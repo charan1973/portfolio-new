@@ -8,7 +8,7 @@ export const experience = [
         techStack: ["Nodejs", "Express", "React", "Redis", "RabbitMQ", "MySQL"],
         summary: [
         "Built REST APIs for the client and the ecosystem",
-        "Added unit tests to ensure the apis doesn't break",
+        "Added unit tests to ensure resilience and backward compatibility of APIs and modules.",
         "Made Reactjs based web pages and integrated it with the backend",
         "Worked on analysing and mitigating critical security violations from backend servers to improve user security and prevent breaches",
         "Worked on 5+ backend projects with various technologies",

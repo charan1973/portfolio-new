@@ -1,7 +1,8 @@
+import { ThemeProvider } from "next-themes";
+
 import Navbar from "../components/navbar/navbar.component";
 import Footer from "../components/footer/footer.component"
 import "../styles/globals.css";
-import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (

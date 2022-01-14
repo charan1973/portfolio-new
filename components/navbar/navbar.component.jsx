@@ -45,7 +45,7 @@ const Navbar = () => {
         <NavbarButton href="/projects">Projects</NavbarButton>
         <NavbarButton href="/tools">Tools</NavbarButton>
         <NavbarButton href="/resources">Resources</NavbarButton>
-        <NavbarButton href="https://blog.charanvasu.me" target="_blank">
+        <NavbarButton href="https://charanvasu.hashnode.dev" target="_blank">
           <span className="flex items-center">
             <span className="mr-1">Blog</span>
             <FaExternalLinkAlt />
