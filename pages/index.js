@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-import { skills, courses } from "../data/home.data";
+import { skills, courses, bio } from "../data/home.data";
 
 const SkillBox = ({ icon, name }) => (
   <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-default">
@@ -34,10 +34,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Charan | Home</title>
+        <title>{bio.name.first} | Home</title>
         <meta
           name="description"
-          content="Charan Vasu's Portfolio website. Electronics student and Javascript developer."
+          content={`${bio.name.first + " " + bio.name.last}'s Portfolio website. ${bio.aboutMe}`}
         />
       </Head>
       <div className="px-2 lg:px-32">
@@ -48,7 +48,7 @@ export default function Home() {
             height="100px"
             className="rounded-full"
           />
-          <h2 className="font-bold text-2xl mt-2">I'm Charan👋</h2>
+          <h2 className="font-bold text-2xl mt-2">I'm {bio.name.first}👋</h2>
         </div>
         <div className="mt-4 lg:px-16">
           <p
@@ -56,31 +56,37 @@ export default function Home() {
             className="text-lg leading-10 break-word"
             style={{ hyphens: "auto" }}
           >
-            Hello, I am a <b>software developer</b>💻. I love computers and the
-            things it can do. To continue the passion for computers, I started
-            learning programming and found my way into web development and so on.
+           {bio.aboutMe}
           </p>
         </div>
-        <div>
-          <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
-            Skills
-          </h3>
-          <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
-            {skills.map((skill) => (
-              <SkillBox key={skill.name} {...skill} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
-            Courses
-          </h3>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-            {courses.map((course) => (
-              <CourseBox key={course.courseName} {...course} />
-            ))}
-          </div>
-        </div>
+        {
+          skills && skills.length > 0 && (
+            <div>
+              <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
+                Skills
+              </h3>
+              <div className="grid grid-cols-3 lg:grid-cols-5 gap-3">
+                {skills.map((skill) => (
+                  <SkillBox key={skill.name} {...skill} />
+                ))}
+              </div>
+            </div>
+          )
+        }
+        {
+          courses && courses.length > 0 && (
+            <div>
+              <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
+                Courses
+              </h3>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                {courses.map((course) => (
+                  <CourseBox key={course.courseName} {...course} />
+                ))}
+              </div>
+            </div>
+          )
+        }
       </div>
     </>
   );

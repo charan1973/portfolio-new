@@ -1,11 +1,12 @@
 import {tools} from "../data/tools.data"
 import Head from "next/head"
+import { bio } from "../data/home.data";
 
 const Tools = () => {
   return (
     <>
     <Head>
-        <title>Charan | Tools</title>
+        <title>{bio.name.first} | Tools</title>
     </Head>
     <div>
     <h2 className="font-bold text-center text-xl mb-4">Tools</h2>

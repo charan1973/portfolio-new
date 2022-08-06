@@ -3,6 +3,10 @@ import { useState } from "react";
 import NavbarButton from "../navbar-button/navbar-button.component";
 import { useTheme } from "next-themes";
 import { FaSun, FaMoon, FaExternalLinkAlt } from "react-icons/fa";
+import { bio } from "../../data/home.data";
+import { projects } from "../../data/project.data";
+import { tools } from "../../data/tools.data";
+import { resources } from "../../data/resources.data";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -12,7 +16,7 @@ const Navbar = () => {
     <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full">
       <div className="w-full flex justify-between">
         <NavbarButton href="/" className="font-semibold border-2">
-          CHARAN
+          {bio.name.first.toUpperCase()}
         </NavbarButton>
         <div className="flex">
           <button
@@ -42,15 +46,31 @@ const Navbar = () => {
         onClick={() => setShowNav(false)}
       >
         <NavbarButton href="/experience">Experience</NavbarButton>
-        <NavbarButton href="/projects">Projects</NavbarButton>
-        <NavbarButton href="/tools">Tools</NavbarButton>
-        <NavbarButton href="/resources">Resources</NavbarButton>
-        <NavbarButton href="https://charanvasu.hashnode.dev" target="_blank">
-          <span className="flex items-center">
-            <span className="mr-1">Blog</span>
-            <FaExternalLinkAlt />
-          </span>
-        </NavbarButton>
+        {
+          projects && projects.length > 0 && (
+            <NavbarButton href="/projects">Projects</NavbarButton>
+          )
+        }
+        {
+          tools && tools.length > 0 && (
+            <NavbarButton href="/tools">Tools</NavbarButton>
+          )
+        }
+        {
+          resources && resources.length > 0 && (
+            <NavbarButton href="/resources">Resources</NavbarButton>
+          )
+        }
+        {
+          bio.blogLink && (
+          <NavbarButton href={bio.blogLink} target="_blank">
+            <span className="flex items-center">
+              <span className="mr-1">Blog</span>
+              <FaExternalLinkAlt />
+            </span>
+          </NavbarButton>
+          )
+        }
       </div>
     </div>
   );
