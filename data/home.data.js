@@ -15,8 +15,25 @@ import {
   SiNextDotJs,
   SiRedis,
   SiRabbitmq,
-  SiMysql
+  SiMysql,
+  SiClojure
 } from "react-icons/si";
+
+export const bio = {
+  name: {
+    first: "Charan",
+    last: "V"
+  },
+  aboutMe: `Hello, I am a software developer💻. I love computers and the
+  things it can do. To continue the passion for computers, I started
+  learning programming and found my way into web development and so on.`,
+  socialLinks: {
+    linkedin: "https://www.linkedin.com/in/charan1973/",
+    github: "https://github.com/charan1973",
+    twitter: "https://twitter.com/charan1973taken"
+  },
+  blogLink: "https://charanvasu.hashnode.dev"
+};
 
 export const skills = [
   {
@@ -78,6 +95,10 @@ export const skills = [
   {
     icon: <SiRabbitmq />,
     name: "RabbitMQ"
+  },
+  {
+    icon: <SiClojure />,
+    name: "Clojure"
   },
 ];
 

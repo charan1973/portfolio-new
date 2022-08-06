@@ -1,14 +1,14 @@
 import Head from "next/head"
 import Link from "next/link";
-import { useState } from "react";
 import { experience as experienceList } from "../data/experience.data";
+import { bio } from "../data/home.data";
 
 
 const Experience = () => {
   return (
     <>
     <Head>
-        <title>Charan | Experience</title>
+        <title>{bio.name.first} | Experience</title>
     </Head>
     <div>
         <h2 className="font-bold text-center text-xl mb-4">Experience</h2>

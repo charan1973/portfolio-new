@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Head from "next/head"
 import { resources } from "../data/resources.data";
+import { bio } from "../data/home.data";
 
 const Resources = () => {
   return (
     <>
     <Head>
-      <title>Charan | Resources</title>
+      <title>{bio.name.first} | Resources</title>
     </Head>
     <div>
     <h2 className="font-bold text-xl text-center">Resources</h2>
