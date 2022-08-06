@@ -1,10 +1,22 @@
 export const experience = [
     {
+        id: 4,
+        companyName: "Gojek(Goto Financial)",
+        companyLink: "https://www.gojek.com/en-id/",
+        role: "Associate Software Engineer(L1)",
+        during: "May 2022 - present",
+        techStack: ["Clojure", "React"],
+        summary: [
+            "Working in sanctions team, that's managing and taking actions against fraudulent transations",
+            "Building internal dashboard for the analysts to be able to engage efficiently to analyse and prevent misbehaviours"
+        ]
+    },
+    {
         id: 3,
         companyName: "StoryXpress",
         companyLink: "https://storyxpress.co",
         role: "Software Development Engineer I",
-        during: "July 2021 - present",
+        during: "July 2021 - April 2022",
         techStack: ["Nodejs", "Express", "React", "Redis", "RabbitMQ", "MySQL"],
         summary: [
         "Built REST APIs for the client and the ecosystem",
@@ -19,6 +31,11 @@ export const experience = [
             "Made generic node template for any future backend projects and had discussions on choosing the right technology for the same",
         ],
         "Cleaned existing code for more reusability in the frontend world",
+        "Built an internal dashboard to consume data from multiple services and manage",
+        [
+            "Setting up the dashboard with Vite, Redux(toolkit), and React",
+            "Wrote wrapper that would be useful to consume data from various services",
+        ]
         ]
     },
     {
@@ -40,7 +57,7 @@ export const experience = [
         companyName: "Mapsense",
         companyLink: "https://mapsense.in",
         role: "Full Stack Web Developer(Intern)",
-        during: "Mar 2021 - June 2021",
+        during: "March 2021 - June 2021",
         techStack: ["Nodejs", "Express", "React", "Javascript", "PostgreSQL"],
         summary: [
             "Started repo from scratch and researched on code design",
