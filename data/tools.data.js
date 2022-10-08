@@ -1,7 +1,7 @@
 export const tools = [
     {
       title: "Operating System",
-      items: ["Fedora 35", "Windows 11"],
+      items: ["Windows 11", "Pop OS"],
     },
     {
       title: "Softwares",

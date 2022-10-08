@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`lg:flex lg:flex-row w-full lg:w-3/5 justify-around ${
+        className={`lg:flex lg:flex-row lg:w-auto justify-around ${
           showNav ? "flex flex-col items-center" : "hidden"
         }`}
         onClick={() => setShowNav(false)}
@@ -51,7 +51,7 @@ const Navbar = () => {
             <NavbarButton href="/projects">Projects</NavbarButton>
           )
         }
-        {
+        {/* {
           tools && tools.length > 0 && (
             <NavbarButton href="/tools">Tools</NavbarButton>
           )
@@ -60,8 +60,8 @@ const Navbar = () => {
           resources && resources.length > 0 && (
             <NavbarButton href="/resources">Resources</NavbarButton>
           )
-        }
-        {
+        } */}
+        {/* {
           bio.blogLink && (
           <NavbarButton href={bio.blogLink} target="_blank">
             <span className="flex items-center">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </span>
           </NavbarButton>
           )
-        }
+        } */}
       </div>
     </div>
   );
