@@ -1,17 +1,15 @@
-import Link from "next/link";
 import { useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
+
 import NavbarButton from "../navbar-button/navbar-button.component";
-import { useTheme } from "next-themes";
-import { FaSun, FaMoon, FaExternalLinkAlt } from "react-icons/fa";
 import { bio } from "../../data/home.data";
 import { projects } from "../../data/project.data";
-import { tools } from "../../data/tools.data";
-import { resources } from "../../data/resources.data";
+import useToggleTheme from "../../hooks/useToggleTheme";
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useToggleTheme();
   const [showNav, setShowNav] = useState(false);
-
+  
   return (
     <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full">
       <div className="w-full flex justify-between">

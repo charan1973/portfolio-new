@@ -6,7 +6,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <div className="min-h-screen px-2 lg:px-40 dark:bg-gray-800 dark:text-white">
         <Navbar />
         <div className="py-10 mb-10">
