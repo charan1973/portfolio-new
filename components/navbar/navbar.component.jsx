@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`lg:flex lg:flex-row lg:w-auto justify-around ${
+        className={`lg:flex lg:flex-row lg:w-auto lg:gap-x-1 justify-around ${
           showNav ? "flex flex-col items-center" : "hidden"
         }`}
         onClick={() => setShowNav(false)}

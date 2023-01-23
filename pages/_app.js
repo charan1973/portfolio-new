@@ -7,7 +7,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
-      <div className="min-h-screen px-2 lg:px-40 dark:bg-gray-800 dark:text-white">
+      <div className="min-h-screen px-2 lg:px-40 bg-cream dark:bg-gray-900 dark:text-gray-300">
         <Navbar />
         <div className="py-10 mb-10">
           <Component {...pageProps} />
