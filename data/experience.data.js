@@ -5,10 +5,34 @@ export const experience = [
         companyLink: "https://www.gojek.com/en-id/",
         role: "Associate Software Engineer(L1)",
         during: "May 2022 - present",
-        techStack: ["Clojure", "React"],
+        techStack: ["Clojure", "Java", "Go", "React", "PostgreSQL", "Redis", "Kafka"],
         summary: [
             "Working in sanctions team, that's managing and taking actions against fraudulent transations",
-            "Building internal dashboard for the analysts to be able to engage efficiently to analyse and prevent misbehaviours"
+            "Building internal dashboard for the analysts to be able to engage efficiently to analyse and prevent misbehaviours",
+            [
+                "Took initiatives to revamp the existing frontend codebase and follow good practices",
+                "Built audit trail and version comparison features for rules, for analysts to be able to identify the cause for change"
+            ],
+            "Built integrations to route data to fraud system, so it can store detailed information and take actions more effectively",
+            "Worked closely with risk analyst to identify the usage of legacy risk engine and deprecate unused data so as to deprecate the system as part of cost savings",
+            [
+                "Identified multiple services that are not being used or requires less resources"
+            ],
+            "Added chargeback fuctionality for dispute team to be able to efficiently create disputes over transactions",
+            [
+                "Helped in building the end to end flow for the same",
+                "Built a generic distributed job processing system using Kafka, with logic to retry on specific error codes",
+                "Collaborated with stakeholders to complete the integration with various systems",
+                "Created new service and conducted discussion to propose the approach",
+                "Planned and completed the migration of chargeback data from legacy system to the newly built",
+                "Took ownership and helped the dispute and analyst team to completely onboard to new system and build missing functionalities"
+            ],
+            "Contributed to production support and identified possible action items to help reduce the recurring incidents",
+            [
+                "Provided support to external teams who are integrated with the fraud system",
+                "Coordinated with risk analyst to identify cause for abnormalities in the engine and provided solutions",
+                "Conducted root cause analysis to diagnose system issues and incidents."
+            ]
         ]
     },
     {

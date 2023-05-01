@@ -3,7 +3,6 @@ import Link from "next/link";
 import { experience as experienceList } from "../data/experience.data";
 import { bio } from "../data/home.data";
 
-
 const Experience = () => {
   return (
     <>
@@ -33,13 +32,13 @@ const Experience = () => {
                             </div>
                             <ul className="list-disc mt-2" style={{ paddingLeft: "40px" }}>
                                 {
-                                    experience.summary.map((item, idx) => {
-                                        if (Array.isArray(experience.summary[idx + 1])) {
+                                    experience.summary.map((item, idx, summary) => {
+                                        if (Array.isArray(summary[idx + 1])) {
                                             return (
                                             <li key={item}>
                                                 {item}
                                                 <ul className="list-disc" style={{ paddingLeft: "40px" }}>
-                                                    {experience.summary[idx + 1].map(nestedItem => <li key={nestedItem}>{nestedItem}</li>)}
+                                                    {summary[idx + 1].map(nestedItem => <li key={nestedItem}>{nestedItem}</li>)}
                                                 </ul>
                                             </li>)
                                         }
