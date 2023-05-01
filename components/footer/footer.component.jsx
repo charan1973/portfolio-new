@@ -6,7 +6,7 @@ const Footer = () => {
   const { socialLinks } = bio;
   return (
     <>
-      <div className="flex justify-around h-20">
+      <div className="flex justify-around h-20 ">
       {
         socialLinks && socialLinks.github && (
           <Link href={bio.socialLinks.github}>

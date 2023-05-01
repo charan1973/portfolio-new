@@ -44,11 +44,11 @@ const Navbar = () => {
         onClick={() => setShowNav(false)}
       >
         <NavbarButton href="/experience">Experience</NavbarButton>
-        {
+        {/* {
           projects && projects.length > 0 && (
             <NavbarButton href="/projects">Projects</NavbarButton>
           )
-        }
+        } */}
         {/* {
           tools && tools.length > 0 && (
             <NavbarButton href="/tools">Tools</NavbarButton>

@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           )
         }
-        {
+        {/* {
           courses && courses.length > 0 && (
             <div>
               <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
             </div>
           )
-        }
+        } */}
       </div>
     </>
   );

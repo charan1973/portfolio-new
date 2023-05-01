@@ -16,7 +16,8 @@ import {
   SiRedis,
   SiRabbitmq,
   SiMysql,
-  SiClojure
+  SiClojure,
+  SiApachekafka
 } from "react-icons/si";
 
 export const bio = {
@@ -100,6 +101,10 @@ export const skills = [
     icon: <SiClojure />,
     name: "Clojure"
   },
+  {
+    icon: <SiApachekafka />,
+    name: "Kafka"
+  }
 ];
 
 export const courses = [
