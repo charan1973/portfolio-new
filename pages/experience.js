@@ -15,7 +15,7 @@ const Experience = () => {
             {
                 experienceList.map(experience => {
                     return (
-                        <div className="border p-10 mb-10" key={experience.id}>
+                        <div className="border border-gray-300 lg:mb-10 lg:p-10 md:p-5 mb-5 p-3" key={experience.id}>
                             <div className="flex justify-between items-center">
                                 <h1 className="text-xl font-bold hover:underline">
                                     <Link href={experience.companyLink}>
@@ -30,14 +30,14 @@ const Experience = () => {
                                     return experience.techStack.length - 1 === idx ? tech + "." : tech + ", " 
                                 })}</span></p>
                             </div>
-                            <ul className="list-disc mt-2" style={{ paddingLeft: "40px" }}>
+                            <ul className="list-disc mt-2 pl-5">
                                 {
                                     experience.summary.map((item, idx, summary) => {
                                         if (Array.isArray(summary[idx + 1])) {
                                             return (
-                                            <li key={item}>
+                                            <li key={item} className="mb-1">
                                                 {item}
-                                                <ul className="list-disc" style={{ paddingLeft: "40px" }}>
+                                                <ul className="list-disc pl-5">
                                                     {summary[idx + 1].map(nestedItem => <li key={nestedItem}>{nestedItem}</li>)}
                                                 </ul>
                                             </li>)
@@ -45,7 +45,7 @@ const Experience = () => {
                                         if (Array.isArray(item)) {
                                             return
                                         }
-                                        return <li key={item}>{item}</li>
+                                        return <li key={item} className="mb-2">{item}</li>
                                     })
                                 }
                             </ul>

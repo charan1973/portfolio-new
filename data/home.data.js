@@ -25,7 +25,7 @@ export const bio = {
     first: "Charan",
     last: "V"
   },
-  aboutMe: `Hello, I am a software developer💻. I love computers and the
+  aboutMe: `Hello, I am a software developer. I love computers and the
   things it can do. To continue the passion for computers, I started
   learning programming and found my way into web development and so on.`,
   socialLinks: {

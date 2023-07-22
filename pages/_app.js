@@ -7,9 +7,9 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
-      <div className="min-h-screen px-2 lg:px-40 bg-cream dark:bg-gray-900 dark:text-gray-300">
+      <div className="min-h-screen lg:px-40 md:px-10 dark:bg-gray-900 dark:text-light-periwinkle bg-seashell px-5">
         <Navbar />
-        <div className="py-10 mb-10">
+        <div className="lg:py-10 lg:mb-10 py-5">
           <Component {...pageProps} />
         </div>
         <Footer />

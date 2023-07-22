@@ -4,7 +4,7 @@ import Link from "next/link";
 import { skills, courses, bio } from "../data/home.data";
 
 const SkillBox = ({ icon, name }) => (
-  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-default">
+  <div className="border flex flex-col lg:flex-row justify-center items-center p-2 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-default border-gray-300">
     <span className="text-md mr-1">{icon}</span>
     <span className="text-sm lg:text-md">{name}</span>
   </div>
@@ -48,7 +48,7 @@ export default function Home() {
             height="100px"
             className="rounded-full"
           />
-          <h2 className="font-bold text-2xl mt-2">I'm {bio.name.first}👋</h2>
+          <h2 className="font-bold text-2xl mt-2">I'm {bio.name.first}</h2>
         </div>
         <div className="mt-4 lg:px-16">
           <p

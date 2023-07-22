@@ -11,9 +11,9 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   
   return (
-    <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full">
+    <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full border-gray-300">
       <div className="w-full flex justify-between">
-        <NavbarButton href="/" className="font-semibold border-2">
+        <NavbarButton href="/" className="font-semibold border-2 border-gray-300">
           {bio.name.first.toUpperCase()}
         </NavbarButton>
         <div className="flex">
