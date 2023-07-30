@@ -73,20 +73,6 @@ export default function Home() {
             </div>
           )
         }
-        {/* {
-          courses && courses.length > 0 && (
-            <div>
-              <h3 className="font-bold text-2xl mt-4 text-center mb-6 underline">
-                Courses
-              </h3>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-                {courses.map((course) => (
-                  <CourseBox key={course.courseName} {...course} />
-                ))}
-              </div>
-            </div>
-          )
-        } */}
       </div>
     </>
   );

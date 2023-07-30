@@ -31,7 +31,8 @@ export const bio = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/charan1973/",
     github: "https://github.com/charan1973",
-    twitter: "https://twitter.com/charan1973taken"
+    twitter: "https://twitter.com/charan1973taken",
+    mastodon: "https://hachyderm.io/@whiterose"
   },
   blogLink: "https://charanvasu.hashnode.dev"
 };
@@ -105,35 +106,4 @@ export const skills = [
     icon: <SiApachekafka />,
     name: "Kafka"
   }
-];
-
-export const courses = [
-  {
-    courseName: "The Complete 2020 Web developer bootcamp",
-    courseLink:
-      "https://www.udemy.com/course/the-complete-web-development-bootcamp",
-    certificateLink:
-      "https://udemy-certificate.s3.amazonaws.com/pdf/UC-efc7f8af-0a84-491c-930f-402b16cbba22.pdf",
-  },
-  {
-    courseName: "Full Stack MERN Bootcamp",
-    courseLink:
-      "https://courses.learncodeonline.in/learn/Full-Stack-MERN-Bootcamp",
-    certificateLink:
-      "https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/50332/2336950_50332.pdf?1593966369",
-  },
-  {
-    courseName: "Upper Intermediate English - British Council",
-    courseLink:
-      "https://learnenglish.britishcouncil.org/skills/speaking/upper-intermediate-b2",
-    certificateLink:
-      "https://drive.google.com/file/d/15_A-b1wo239XPZeni1Fsg4W3pkw8w7Xp/view",
-  },
-  {
-    courseName: "Complete React Developer in 2021 (w/ Redux, Hooks, GraphQL)",
-    courseLink:
-      "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
-    certificateLink:
-      "",
-  },
 ];

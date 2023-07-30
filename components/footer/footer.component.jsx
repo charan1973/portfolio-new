@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithubSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaTwitter, FaMastodon } from "react-icons/fa";
 import { bio } from "../../data/home.data";
 
 const Footer = () => {
@@ -30,6 +30,15 @@ const Footer = () => {
           <Link href={bio.socialLinks.twitter}>
             <a target="_blank">
               <FaTwitter className="text-4xl" />
+            </a>
+          </Link>
+        )
+      }
+      {
+        socialLinks && socialLinks.mastodon && (
+          <Link href={bio.socialLinks.mastodon}>
+            <a target="_blank">
+              <FaMastodon className="text-4xl" />
             </a>
           </Link>
         )
