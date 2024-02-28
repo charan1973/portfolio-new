@@ -6,10 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "prebuild": "next telemetry disable"
   },
   "dependencies": {
-    "next": "^12.0.7",
+    "next": "^12.3.0",
     "next-themes": "0.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
