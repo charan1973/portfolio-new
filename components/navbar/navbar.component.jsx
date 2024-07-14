@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaExternalLinkAlt } from "react-icons/fa";
 
 import NavbarButton from "../navbar-button/navbar-button.component";
 import { bio } from "../../data/home.data";
@@ -9,11 +9,14 @@ import useToggleTheme from "../../hooks/useToggleTheme";
 const Navbar = () => {
   const { theme, setTheme } = useToggleTheme();
   const [showNav, setShowNav] = useState(false);
-  
+
   return (
     <div className="grid-cols-2 lg:flex justify-between items-center py-5 lg:py-10 px-3 lg:px-0 border border-t-0 border-r-0 border-l-0 border-b-2 max-w-full border-gray-300">
       <div className="w-full flex justify-between">
-        <NavbarButton href="/" className="font-semibold border-2 border-gray-300">
+        <NavbarButton
+          href="/"
+          className="font-semibold border-2 border-gray-300"
+        >
           {bio.name.first.toUpperCase()}
         </NavbarButton>
         <div className="flex">
@@ -44,6 +47,12 @@ const Navbar = () => {
         onClick={() => setShowNav(false)}
       >
         <NavbarButton href="/experience">Experience</NavbarButton>
+        <NavbarButton href={bio.resumeLink} target="_blank">
+          <span className="flex items-center">
+            <span className="mr-1">Resume</span>
+            <FaExternalLinkAlt />
+          </span>
+        </NavbarButton>
         {/* {
           projects && projects.length > 0 && (
             <NavbarButton href="/projects">Projects</NavbarButton>

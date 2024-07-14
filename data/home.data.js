@@ -17,13 +17,13 @@ import {
   SiRabbitmq,
   SiMysql,
   SiClojure,
-  SiApachekafka
+  SiApachekafka,
 } from "react-icons/si";
 
 export const bio = {
   name: {
     first: "Charan",
-    last: "V"
+    last: "V",
   },
   aboutMe: `Hello, I am a software developer. I love computers and the
   things it can do. To continue the passion for computers, I started
@@ -32,9 +32,11 @@ export const bio = {
     linkedin: "https://www.linkedin.com/in/charan1973/",
     github: "https://github.com/charan1973",
     twitter: "https://twitter.com/charan1973taken",
-    mastodon: "https://hachyderm.io/@whiterose"
+    mastodon: "https://hachyderm.io/@whiterose",
   },
-  blogLink: "https://charanvasu.hashnode.dev"
+  blogLink: "https://charanvasu.hashnode.dev",
+  resumeLink:
+    "https://drive.google.com/file/d/1ueLww-Lu-aW-VauQkiZJbZjeUVFz09Vp/view",
 };
 
 export const skills = [
@@ -92,18 +94,18 @@ export const skills = [
   },
   {
     icon: <SiRedis />,
-    name: "Redis"
+    name: "Redis",
   },
   {
     icon: <SiRabbitmq />,
-    name: "RabbitMQ"
+    name: "RabbitMQ",
   },
   {
     icon: <SiClojure />,
-    name: "Clojure"
+    name: "Clojure",
   },
   {
     icon: <SiApachekafka />,
-    name: "Kafka"
-  }
+    name: "Kafka",
+  },
 ];
